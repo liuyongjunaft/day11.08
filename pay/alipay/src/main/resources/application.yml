@@ -1,0 +1,9 @@
+server:
+  port: 3022
+
+spring:
+  application:
+    name: dubbo-alipay
+  profiles:
+    active: dubbo
+

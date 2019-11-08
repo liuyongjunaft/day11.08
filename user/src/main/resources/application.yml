@@ -1,0 +1,10 @@
+server:
+  port: 8092
+spring:
+  application:
+    name: user-center
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 47.106.179.74:8848

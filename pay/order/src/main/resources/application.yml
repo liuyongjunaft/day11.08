@@ -1,0 +1,21 @@
+server:
+  port: 3020
+dubbo:
+  protocol:
+    name: dubbo
+    port: 4050
+  registry:
+    address: nacos://47.106.179.74:8848
+  cloud:
+    subscribed-services: dubbo-wechat,dubbo-alipay
+
+spring:
+  application:
+    name: dubbo-order
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 47.106.179.74:8848
+
+  main:
+    allow-bean-definition-overriding: true
